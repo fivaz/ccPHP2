@@ -1,0 +1,5 @@
+RewriteEngine On
+
+
+RewriteRule ^charges/?$ index.php?%{QUERY_STRING}
+RewriteRule ^charges/([0-9]+)$ index.php?id=$1&%{QUERY_STRING}
